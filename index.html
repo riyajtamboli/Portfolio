@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riyaj Tamboli | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header>
@@ -17,31 +19,32 @@
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact" class="btn">Contact</a></li>
-          <!-- Resume Link in Navbar -->
-          <li><a href="Riyaj_T.pdf" download class="btn resume">📄 Resume</a></li>
+          <li><a href="#education">Education</a></li> <!-- ✅ New -->
+          <li><a href="#contact" class="btn nav-btn">Contact</a></li>
+          <li><a href="Riyaj_T.pdf" download class="btn nav-btn resume">📄 Resume</a></li>
         </ul>
+
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
   <!-- Hero -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <h2>Hello, I'm</h2>
-    <h1>Riyaj Tamboli</h1>
-    <p>Java Full Stack Developer | Data Science Enthusiast</p>
-    <p class="address">📍 Tamboli Manzil, Behind Government Hospital, Shivankhed 413514</p>
-    <a href="#projects" class="btn">View My Work</a>
-    <a href="#contact" class="btn secondary">Hire Me</a>
-    <!-- Resume Download Button -->
-    <a href="Riyaj_T.pdf" download class="btn resume">📄 Download Resume</a>
-  </div>
-  <div class="hero-img">
-    <img src="passport photo.png" alt="Riyaj Tamboli">
-  </div>
-</section>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm</h2>
+      <h1>Riyaj Tamboli</h1>
+      <p>Java Full Stack Developer | Data Science Enthusiast</p>
+      <p class="address">📍 Tamboli Manzil, Behind Government Hospital, Shivankhed 413514</p>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn secondary">Hire Me</a>
+      <!-- Resume Download Button -->
+      <a href="Riyaj_T.pdf" download class="btn resume">📄 Download Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="passport photo.png" alt="Riyaj Tamboli">
+    </div>
+  </section>
 
 
   <!-- About -->
@@ -50,10 +53,13 @@
       <img src="Neon Dreamscape Portrait.png" alt="About Image">
       <div>
         <h2>About Me</h2>
-        <p>I have completed my Bachelor of Engineering in Computer Science from Sinhgad Institute of Technology, Lonavala. 
-        I am passionate about full-stack development and data science, with hands-on experience in Java, Spring Boot, Python, 
-        and modern web technologies.</p>
-        <p>I enjoy building scalable applications, working on AI-driven solutions, and continuously learning new tools to improve my craft.</p>
+        <p>I have completed my Bachelor of Engineering in Computer Science from Sinhgad Institute of Technology,
+          Lonavala.
+          I am passionate about full-stack development and data science, with hands-on experience in Java, Spring Boot,
+          Python,
+          and modern web technologies.</p>
+        <p>I enjoy building scalable applications, working on AI-driven solutions, and continuously learning new tools
+          to improve my craft.</p>
       </div>
     </div>
   </section>
@@ -99,24 +105,66 @@
       </div>
     </div>
   </section>
+  <!-- Education -->
+  <!-- Education -->
+<section id="education" class="education section">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="edu-grid">
+
+      <div class="card">
+        <h3>Bachelor of Engineering</h3>
+        <p>Sinhgad Institute of Technology, Lonavala</p>
+        <p><strong>2022 – 2025</strong></p>
+        <p class="marks">CGPA: 8.03 / 10</p>
+      </div>
+
+      <div class="card">
+        <h3>Diploma</h3>
+        <p>Government Polytechnic, &nbsp; 
+           &nbsp; Solapur</p>
+        <p><strong>2019 – 2021</strong></p>
+        <p class="marks">Percentage: 86%</p>
+      </div>
+
+      <div class="card">
+        <h3>Higher Secondary (12th)</h3>
+        <p>Yashwant Vidyalaya, &nbsp; &nbsp; 
+          &nbsp; Wadhona Bk</p>
+        <p><strong>2016 – 2017</strong></p>
+        <p class="marks">Percentage: 66.15%</p>
+      </div>
+
+      <div class="card">
+        <h3>Secondary (10th)</h3>
+        <p>Jijamata Madhyamic Vidyalaya, Kumtha BK</p>
+        <p><strong>2017 – 2018</strong></p>
+        <p class="marks">Percentage: 89.60</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Contact -->
   <section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/xnnbjeyv" method="POST">
-    
-    <label for="name">Your Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-    
-    <label for="email">Your Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-    
-    <label for="message">Message</label>
-    <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
-    
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xnnbjeyv" method="POST">
+
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
 
   <!-- Footer -->
@@ -124,4 +172,5 @@
     <p>© 2025 Riyaj Tamboli. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
