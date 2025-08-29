@@ -19,18 +19,16 @@
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li> <!-- ✅ New -->
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact" class="btn nav-btn">Contact</a></li>
           <li><a href="Riyaj_T.pdf" download class="btn nav-btn resume">📄 Resume</a></li>
         </ul>
-
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <!-- Hero -->
-  <section id="home" class="hero">
+  <section id="home" class="hero reveal">
     <div class="hero-text">
       <h2>Hello, I'm</h2>
       <h1>Riyaj Tamboli</h1>
@@ -46,9 +44,8 @@
     </div>
   </section>
 
-
   <!-- About -->
-  <section id="about" class="about section">
+  <section id="about" class="about section reveal">
     <div class="container about-content">
       <img src="Neon Dreamscape Portrait.png" alt="About Image">
       <div>
@@ -65,25 +62,24 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects section">
+  <section id="projects" class="projects section reveal">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
-        <!-- Portfolio Project -->
         <div class="card">
           <img src="https://placehold.co/600x400/22C55E/FFFFFF?text=Portfolio+Website" alt="Project Portfolio">
           <h3>Portfolio Website</h3>
           <p>HTML | CSS | JavaScript</p>
           <a href="https://github.com/riyajtamboli/Portfolio" target="_blank">View Project</a>
         </div>
-        <!-- Attendance System -->
+
         <div class="card">
           <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Attendance+System" alt="Project 1">
           <h3>Attendance Management System</h3>
           <p>Java | Spring Boot | MySQL | WhatsApp API</p>
           <a href="https://github.com/riyajtamboli/Attendance-Management-Sytsem" target="_blank">View Project</a>
         </div>
-        <!-- Crime Detection -->
+
         <div class="card">
           <img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Crime+Detection" alt="Project 2">
           <h3>Crime Detection using Smart Surveillance</h3>
@@ -95,7 +91,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="skills section">
+  <section id="skills" class="skills section reveal">
     <div class="container">
       <h2>Skills</h2>
       <div class="skill-grid">
@@ -105,51 +101,47 @@
       </div>
     </div>
   </section>
+
   <!-- Education -->
-  <!-- Education -->
-<section id="education" class="education section">
-  <div class="container">
-    <h2>Education</h2>
-    <div class="edu-grid">
+  <section id="education" class="education section reveal">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu-grid">
 
-      <div class="card">
-        <h3>Bachelor of Engineering</h3>
-        <p>Sinhgad Institute of Technology, Lonavala</p>
-        <p><strong>2022 – 2025</strong></p>
-        <p class="marks">CGPA: 8.03 / 10</p>
+        <div class="card">
+          <h3>Bachelor of Engineering</h3>
+          <p>Sinhgad Institute of Technology, Lonavala</p>
+          <p><strong>2022 – 2025</strong></p>
+          <p class="marks">CGPA: 8.03 / 10</p>
+        </div>
+
+        <div class="card">
+          <h3>Diploma</h3>
+          <p>Government Polytechnic, Solapur</p>
+          <p><strong>2019 – 2021</strong></p>
+          <p class="marks">Percentage: 86%</p>
+        </div>
+
+        <div class="card">
+          <h3>Higher Secondary (12th)</h3>
+          <p>Yashwant Vidyalaya, Wadhona Bk</p>
+          <p><strong>2016 – 2017</strong></p>
+          <p class="marks">Percentage: 66.15%</p>
+        </div>
+
+        <div class="card">
+          <h3>Secondary (10th)</h3>
+          <p>Jijamata Madhyamic Vidyalaya, Kumtha BK</p>
+          <p><strong>2017 – 2018</strong></p>
+          <p class="marks">Percentage: 89.60%</p>
+        </div>
+
       </div>
-
-      <div class="card">
-        <h3>Diploma</h3>
-        <p>Government Polytechnic, &nbsp; 
-           &nbsp; Solapur</p>
-        <p><strong>2019 – 2021</strong></p>
-        <p class="marks">Percentage: 86%</p>
-      </div>
-
-      <div class="card">
-        <h3>Higher Secondary (12th)</h3>
-        <p>Yashwant Vidyalaya, &nbsp; &nbsp; 
-          &nbsp; Wadhona Bk</p>
-        <p><strong>2016 – 2017</strong></p>
-        <p class="marks">Percentage: 66.15%</p>
-      </div>
-
-      <div class="card">
-        <h3>Secondary (10th)</h3>
-        <p>Jijamata Madhyamic Vidyalaya, Kumtha BK</p>
-        <p><strong>2017 – 2018</strong></p>
-        <p class="marks">Percentage: 89.60</p>
-      </div>
-
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="reveal">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/xnnbjeyv" method="POST">
 
@@ -166,11 +158,31 @@
     </form>
   </section>
 
-
   <!-- Footer -->
   <footer>
     <p>© 2025 Riyaj Tamboli. All Rights Reserved.</p>
   </footer>
+
+  <!-- Scroll Animation JS -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
 </body>
 
 </html>
